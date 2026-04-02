@@ -18,7 +18,7 @@ INDIVIDUAL REPORT (30%) - (1800 words)
  Individual contribution to the project's development via the report (validation reports, address how the specification was followed) (15%)
  Individual contribution to the implimentation of the project (show contribution to the code and how good coding practice was followed) (15%)
  
-Website will be based on a Cafe. 
+Website will be based on a Cafe. Brand name is "UCafè". Brand color is #d4edf4. Website has 4 sections - Home,Menu,About and Contact.
  
  
 
