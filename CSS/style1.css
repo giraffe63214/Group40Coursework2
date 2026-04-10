@@ -27,3 +27,19 @@ h2{
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.validation-message {
+  display: none;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.validation-error {
+  display: block;
+  color: #d63333;
+}
+
+.validation-success {
+  display: block;
+  color: #198754;
+}
