@@ -111,7 +111,7 @@ h2 {
 }
 
 .slider-frame {
-  min-height: 320px;
+  height: 320px;
   background-color: #f8f9fa;
   position: relative;
 }
@@ -161,7 +161,7 @@ h2 {
   }
 
   .slider-frame {
-    min-height: 260px;
+    height: 260px;
   }
 }
 

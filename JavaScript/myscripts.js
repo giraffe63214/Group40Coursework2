@@ -58,8 +58,8 @@ function validatePhoneField(fieldId, value) {
   if (!/^\d+$/.test(value)) {
     return showFieldMessage(fieldId, 'Phone Number must contain only numbers', false);
   }
-  if (value.length < 11) {
-    return showFieldMessage(fieldId, 'Phone Number must be at least 11 digits long', false);
+  if (value.length < 11 || value.length > 11) {
+    return showFieldMessage(fieldId, 'Phone Number must be exactly 11 digits long', false);
   }
   return showFieldMessage(fieldId, '', true);
 }
@@ -116,41 +116,41 @@ var menuSectionSliders = [
   {
     id: 'hot-drinks',
     slides: [
-      { name: 'Latte', image: 'https://via.placeholder.com/720x480?text=Latte', alt: 'Latte' },
-      { name: 'Cappuccino', image: 'https://via.placeholder.com/720x480?text=Cappuccino', alt: 'Cappuccino' },
-      { name: 'Americano', image: 'https://via.placeholder.com/720x480?text=Americano', alt: 'Americano' }
+      { name: 'Latte', image: 'Images/Menu_item/Hot_Drinks/latte.webp', alt: 'Latte' },
+      { name: 'Cappuccino', image: 'Images/Menu_item/Hot_Drinks/cappuccino.webp', alt: 'Cappuccino' },
+      { name: 'Moccha', image: 'Images/Menu_item/Hot_Drinks/moccha.webp', alt: 'Moccha' }
     ]
   },
   {
     id: 'cold-drinks',
     slides: [
-      { name: 'Iced Latte', image: 'https://via.placeholder.com/720x480?text=Iced+Latte', alt: 'Iced Latte' },
-      { name: 'Iced Tea', image: 'https://via.placeholder.com/720x480?text=Iced+Tea', alt: 'Iced Tea' },
-      { name: 'Berry Smoothie', image: 'https://via.placeholder.com/720x480?text=Berry+Smoothie', alt: 'Berry Smoothie' }
+      { name: 'Iced Latte', image: 'Images/Menu_item/Cold_Drinks/Iced_latte.webp', alt: 'Iced Latte' },
+      { name: 'Iced Tea', image: 'Images/Menu_item/Cold_Drinks/Iced_tea.webp', alt: 'Iced Tea' },
+      { name: 'Berry Smoothie', image: 'Images/Menu_item/Cold_Drinks/berry_smothes.webp', alt: 'Berry Smoothie' }
     ]
   },
   {
     id: 'pastries-bakery',
     slides: [
-      { name: 'Croissant', image: 'https://via.placeholder.com/720x480?text=Croissant', alt: 'Croissant' },
-      { name: 'Blueberry Muffin', image: 'https://via.placeholder.com/720x480?text=Blueberry+Muffin', alt: 'Blueberry Muffin' },
-      { name: 'Cinnamon Roll', image: 'https://via.placeholder.com/720x480?text=Cinnamon+Roll', alt: 'Cinnamon Roll' }
+      { name: 'Croissant', image: 'Images/Menu_item/Pastries_&_Bakery/Croissant.webp', alt: 'Croissant' },
+      { name: 'Chocolate Muffin', image: 'Images/Menu_item/Pastries_&_Bakery/chocolate_muffin.webp', alt: 'Chocolate Muffin' },
+      { name: 'Cinnamon Roll', image: 'Images/Menu_item/Pastries_&_Bakery/Cinnamon_roll.webp', alt: 'Cinnamon Roll' }
     ]
   },
   {
     id: 'breakfast-items',
     slides: [
-      { name: 'Avocado Toast', image: 'https://via.placeholder.com/720x480?text=Avocado+Toast', alt: 'Avocado Toast' },
-      { name: 'Yogurt & Granola', image: 'https://via.placeholder.com/720x480?text=Yogurt+%26+Granola', alt: 'Yogurt & Granola' },
-      { name: 'Pancakes', image: 'https://via.placeholder.com/720x480?text=Pancakes', alt: 'Pancakes' }
+      { name: 'Avocado Toast', image: 'Images/Menu_item/Breakfast_Items/Avocado_toast.webp', alt: 'Avocado Toast' },
+      { name: 'Yogurt & Granola', image: 'Images/Menu_item/Breakfast_Items/Yogurt_&_Granola.webp', alt: 'Yogurt & Granola' },
+      { name: 'Pancakes', image: 'Images/Menu_item/Breakfast_Items/Pancakes.webp', alt: 'Pancakes' }
     ]
   },
   {
     id: 'light-lunch',
     slides: [
-      { name: 'Chicken Sandwich', image: 'https://via.placeholder.com/720x480?text=Chicken+Sandwich', alt: 'Chicken Sandwich' },
-      { name: 'Veggie Wrap', image: 'https://via.placeholder.com/720x480?text=Veggie+Wrap', alt: 'Veggie Wrap' },
-      { name: 'Soup of the Day', image: 'https://via.placeholder.com/720x480?text=Soup+of+the+Day', alt: 'Soup of the Day' }
+      { name: 'Chicken Sandwich', image: 'Images/Menu_item/Lunch/Chicken_sandwich.webp', alt: 'Chicken Sandwich' },
+      { name: 'Veggie Wrap', image: 'Images/Menu_item/Lunch/Veggie_wrap.webp', alt: 'Veggie Wrap' },
+      { name: 'BLT Sandwich', image: 'Images/Menu_item/Lunch/BLT_sandwich.webp', alt: 'BLT Sandwich' }
     ]
   }
 ];
