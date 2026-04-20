@@ -58,6 +58,9 @@ function validatePhoneField(fieldId, value) {
   if (!/^\d+$/.test(value)) {
     return showFieldMessage(fieldId, 'Phone Number must contain only numbers', false);
   }
+  if (!value.startsWith('07')) {
+    return showFieldMessage(fieldId, 'Phone Number must start with 07', false);
+  }
   if (value.length < 11 || value.length > 11) {
     return showFieldMessage(fieldId, 'Phone Number must be exactly 11 digits long', false);
   }
