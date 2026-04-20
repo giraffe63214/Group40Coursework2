@@ -195,6 +195,7 @@ img {
 
 /* Specific styling for coffee image and home logo - centers and adds shadow */
 #ourCoffee,
+#ourStore,
 .home-logo {
   max-width: 100%;
   width: 100%;
@@ -202,6 +203,7 @@ img {
   border-radius: 0.5rem;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
+
 
 /* Responsive font sizes for medium screens */
 @media (max-width: 768px) {
