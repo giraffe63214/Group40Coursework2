@@ -38,16 +38,19 @@ h2 {
   margin-top: 0.25rem;
 }
 
+/* Error validation message - displays in red for invalid inputs */
 .validation-error {
   display: block;
   color: #d63333;
 }
 
+/* Success validation message - displays in green for valid inputs */
 .validation-success {
   display: block;
   color: #198754;
 }
 
+/* Section block layout - uses CSS Grid for responsive two-column layout */
 .section-block {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 430px);
@@ -55,6 +58,7 @@ h2 {
   align-items: stretch;
 }
 
+/* Section list and slider containers - flex layout for vertical stacking */
 .section-list,
 .section-slider {
   min-width: 0;
@@ -62,10 +66,12 @@ h2 {
   flex-direction: column;
 }
 
+/* Slider container height - ensures full height usage */
 .section-slider {
   height: 100%;
 }
 
+/* Responsive design for tablets and smaller screens - switches to single column */
 @media (max-width: 991px) {
   .section-block {
     grid-template-columns: 1fr;
@@ -116,6 +122,7 @@ h2 {
   position: relative;
 }
 
+/* Slider image styling - ensures images fit within the frame */
 .slider-frame img {
   max-width: 100%;
   max-height: 100%;
@@ -125,6 +132,7 @@ h2 {
   display: block;
 }
 
+/* Slider arrow buttons - positioning and styling for navigation */
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -143,6 +151,7 @@ h2 {
   justify-content: center;
 }
 
+/* Slider arrow hover effect - darkens background on hover */
 .slider-arrow:hover {
   background: rgba(0, 0, 0, 0.7);
 }
@@ -155,6 +164,7 @@ h2 {
   right: 12px;
 }
 
+/* Responsive adjustments for medium screens - changes layout and slider height */
 @media (max-width: 991px) {
   .section-block {
     flex-direction: column;
@@ -165,6 +175,7 @@ h2 {
   }
 }
 
+/* Responsive adjustments for small screens - adjusts title layout and arrow sizes */
 @media (max-width: 576px) {
   .menu-item-title {
     flex-direction: column;
@@ -174,6 +185,73 @@ h2 {
   .slider-arrow {
     width: 38px;
     height: 38px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Specific styling for coffee image and home logo - centers and adds shadow */
+#ourCoffee,
+.home-logo {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive font sizes for medium screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Responsive font sizes for small screens */
+@media (max-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .navbar-brand span {
+    font-size: 22px;
+  }
+
+  button,
+  .button {
+    width: 100%;
   }
 }
 
