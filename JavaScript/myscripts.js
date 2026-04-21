@@ -19,7 +19,8 @@ function submitApplication() {
   formSubmitted = true;
   var valid = true;
 
-  valid = validateTextField('fullName', $('#fullName').val().trim() !== '', 'Full Name cannot be empty') && valid;
+  valid = validateTextField('forename', $('#forename').val().trim() !== '', 'Forename cannot be empty') && valid;
+  valid = validateTextField('surname', $('#surname').val().trim() !== '', 'Surname cannot be empty') && valid;
   valid = validateEmailField('email', $('#email').val().trim()) && valid;
   valid = validatePhoneField('phone', $('#phone').val().trim()) && valid;
   valid = validateSelectField('position', $('#position').val() !== '', 'Position Applying For cannot be empty') && valid;
@@ -235,8 +236,10 @@ $(function() {
       return;
     }
 
-    if (fieldId === 'fullName') {
-      validateTextField(fieldId, $(this).val().trim() !== '', 'Full Name cannot be empty');
+    if (fieldId === 'forename') {
+      validateTextField(fieldId, $(this).val().trim() !== '', 'Forename cannot be empty');
+    } else if (fieldId === 'surname') {
+      validateTextField(fieldId, $(this).val().trim() !== '', 'Surname cannot be empty');
     } else if (fieldId === 'email') {
       validateEmailField(fieldId, $(this).val().trim());
     } else if (fieldId === 'phone') {
