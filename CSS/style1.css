@@ -1,4 +1,3 @@
-/* Default body text styling */
 body {
     background-color: #d4edf4;
     font-family: "Times New Roman", Times, serif;
@@ -72,10 +71,14 @@ h2 {
   height: 100%;
 }
 
-/* Responsive design for tablets and smaller screens - switches to single column */
+/* Responsive design for tablets and smaller screens by making it single grid */
 @media (max-width: 991px) {
   .section-block {
     grid-template-columns: 1fr;
+  }
+
+  .slider-frame {
+    height: 260px;
   }
 }
 
@@ -165,18 +168,7 @@ h2 {
   right: 12px;
 }
 
-/* Responsive adjustments for medium screens - changes layout and slider height */
-@media (max-width: 991px) {
-  .section-block {
-    flex-direction: column;
-  }
-
-  .slider-frame {
-    height: 260px;
-  }
-}
-
-/* Responsive adjustments for small screens - adjusts title layout and arrow sizes */
+/* Responsive adjustments for small screens */
 @media (max-width: 576px) {
   .menu-item-title {
     flex-direction: column;
@@ -196,7 +188,6 @@ img {
 
 /* Specific styling for coffee image and home logo - centers and adds shadow */
 #ourCoffee,
-#ourStore,
 .home-logo {
   max-width: 100%;
   width: 100%;
@@ -204,7 +195,6 @@ img {
   border-radius: 0.5rem;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
-
 
 /* Responsive font sizes for medium screens */
 @media (max-width: 768px) {
@@ -227,34 +217,6 @@ img {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-}
-
-/* Responsive font sizes for small screens */
-@media (max-width: 576px) {
-  body {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  .navbar-brand span {
-    font-size: 22px;
-  }
-
-  button,
-  .button {
-    width: 100%;
   }
 }
 
